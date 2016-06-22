@@ -1,0 +1,1 @@
+document.getElementById('app').appendChild(new Text('Hello World!'));
