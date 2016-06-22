@@ -53,14 +53,13 @@ mathBoxIntro.select('grid').set('color', 'light grey');
 mathBoxIntro.set('focus', 2);
 
 // Build some data.
-const data =
-  view.interval({
-    expr(emit, x, i, t) {
-      emit(x, Math.sin(x));
-    },
-    width: 41,
-    channels: 2,
-  });
+view.interval({
+  expr(emit, x, i, t) {
+    emit(x, Math.sin(x));
+  },
+  width: 41,
+  channels: 2,
+});
 
 // Draw the data!
 view.line({
