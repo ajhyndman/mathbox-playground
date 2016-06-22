@@ -2,7 +2,7 @@ import { mathBox } from 'mathbox';
 
 
 // Bootstrap the mathBox instance.
-const myMathBox = mathBox({
+const mathBoxIntro = mathBox({
   element: document.querySelector('#app'),
   init: true,
   plugins: [
@@ -19,13 +19,13 @@ const myMathBox = mathBox({
 });
 
 // Set up a camera.
-const camera = myMathBox.camera({
+const camera = mathBoxIntro.camera({
   proxy: true,
   position: [0, 0, 2],
 });
 
 // Map a cartesian space onto the visible canvas.
-const view = myMathBox
+const view = mathBoxIntro
   .cartesian({
     range: [[-4, 4], [-2, 2]],
     scale: [2, 1],
@@ -47,9 +47,9 @@ view
   });
 
 // Tweak some view settings.
-myMathBox.select('axis').set('color', 'dark grey');
-myMathBox.select('grid').set('color', 'light grey');
-myMathBox.set('focus', 2);
+mathBoxIntro.select('axis').set('color', 'dark grey');
+mathBoxIntro.select('grid').set('color', 'light grey');
+mathBoxIntro.set('focus', 2);
 
 // Build some data.
 const data =
@@ -114,7 +114,7 @@ const labels =
 
 
 // // Animate the entire scene.
-// const play = myMathBox.play({
+// const play = mathBoxIntro.play({
 //   target: 'cartesian',
 //   pace: 5,
 //   to: 2,
