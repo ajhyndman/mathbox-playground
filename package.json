@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "An environment for data visualisation with Mathbox",
   "main": "index.js",
+  "jspm": {
+    "name": "mathbox-playground",
+    "main": "mathbox-playground.js",
+    "dependencies": {
+      "mathbox": "bower:mathbox@^0.0.5"
+    },
+    "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.12"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
