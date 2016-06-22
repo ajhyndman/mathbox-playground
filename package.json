@@ -1,0 +1,26 @@
+{
+  "name": "mathbox-playground",
+  "version": "1.0.0",
+  "description": "An environment for data visualisation with Mathbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajhyndman/mathbox-playground.git"
+  },
+  "keywords": [
+    "Mathbox",
+    "Data",
+    "Visualisation",
+    "math",
+    "graphing"
+  ],
+  "author": "Andrew Hyndman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajhyndman/mathbox-playground/issues"
+  },
+  "homepage": "https://github.com/ajhyndman/mathbox-playground#readme"
+}
