@@ -18,6 +18,9 @@ SystemJS.config({
       "main": "mathbox-playground.js",
       "meta": {
         "*.js": {
+          "babelOptions": {
+            "sourceMaps": "inline"
+          },
           "loader": "plugin-babel"
         }
       }
