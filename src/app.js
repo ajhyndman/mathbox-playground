@@ -11,6 +11,7 @@ const mathBoxIntro = mathBox({
   renderer: {
     parameters: {
       alpha: true,
+      antialias: true,
     },
   },
   size: {
@@ -85,7 +86,7 @@ const vector =
     items: 2,
   })
   .vector({
-    end: false,
+    end: true,
     width: 3,
     color: '#50A000',
   });
