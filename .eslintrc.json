@@ -4,6 +4,7 @@
         "indent": [
             "error",
             2
-        ]
+        ],
+        "import/no-unresolved": "off"
     }
 }
