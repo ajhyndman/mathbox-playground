@@ -91,7 +91,7 @@ const vector =
   });
 
 // Assemble axis ticks and labels.
-const scale =
+const scaleX =
   view.scale({
     divide: 10,
   });
@@ -108,6 +108,25 @@ const format =
   });
 const labels =
   view.label({
+    color: 'black',
+    zIndex: 1,
+  });
+
+const scaleY =
+  view.scale({
+    axis: 2,
+    divide: 5,
+  })
+  .ticks({
+    width: 2,
+    size: 15,
+    color: 'dark grey',
+  })
+  .format({
+    digits: 2,
+    weight: 'normal',
+  })
+  .label({
     color: 'black',
     zIndex: 1,
   });
